@@ -8,7 +8,7 @@ from .forms import CustomUserCreationForm, CustomUserLoginForm, CustomUserUpdate
 from .models import CustomUser
 from django.contrib import messages
 from main.models import Product
-from orders.models import Order
+# from orders.models import Order
 
 
 def register(request):
