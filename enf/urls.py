@@ -8,6 +8,8 @@ urlpatterns = [
     path('cart/', include('cart.urls', namespace='cart')),
     path('', include('main.urls', namespace='main')),
     path('users/', include('users.urls', namespace='users')),
+    path('orders/', include('orders.urls', namespace='orders')),
+    path('payment/', include('payment.urls', namespace='payment')),
 ]
 #Позволяет работать с MEDIA, когда проект не на продакшене
 if settings.DEBUG:
