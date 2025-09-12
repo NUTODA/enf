@@ -1,4 +1,3 @@
-from django.conf import settings
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
@@ -10,7 +9,6 @@ from .models import Order, OrderItem
 from cart.views import CartMixin
 from cart.models import Cart
 from main.models import ProductSize
-from django.shortcuts import get_object_or_404
 from payment.views import create_stripe_checkout_session
 from decimal import Decimal
 import logging

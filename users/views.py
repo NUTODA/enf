@@ -1,14 +1,13 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
 from django.http import HttpResponse
 from django.template.response import TemplateResponse
 from .forms import CustomUserCreationForm, CustomUserLoginForm, CustomUserUpdateForm
 from .models import CustomUser
-from django.contrib import messages
 from main.models import Product
-# from orders.models import Order
+from orders.models import Order
 
 
 def register(request):
