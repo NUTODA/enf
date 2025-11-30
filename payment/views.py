@@ -11,7 +11,7 @@ from cart.views import CartMixin
 
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
-stripe_endpoint_secret = settings.STRIPE_WEBHOOK_KEY
+stripe_endpoint_secret = settings.STRIPE_WEBHOOK_SECRET
 
 
 def create_stripe_checkout_session(order, request):

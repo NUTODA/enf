@@ -92,7 +92,7 @@ class CatalogView(TemplateView):
                 else "main/catalog.html"
             )
             return TemplateResponse(request, template, context)
-        return TemplateResponse(request, self.template_name, context)
+        return TemplateResponse(request, self.template, context)
 
 
 class ProductDetailView(DetailView):
